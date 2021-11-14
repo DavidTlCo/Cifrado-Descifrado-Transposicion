@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+:root{
+    --background: #fff;
+    --primary-color: #91C788;
+    --contrast-color: #52734D;
+    --secondary-color: #;
+    --primary-text: #fff;
+    --text-color: #7f807d;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background);
+    font-family: 'Fira Sans', sans-serif;
+}
+.fa-fingerprint{
+    margin: 0 15px;
+    font-size: 2.5rem;
+    color: var(--contrast-color);
+
+}
+.title{
+    margin: 20px 0px 15px 80px;
+    padding: 20px 0;
+    color: var(--primary-text);
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 20px 0 0 20px;
+    font-size: 1.5rem;
+}
+.subtitle{
+    text-align: start;
+    color: var(--contrast-color);
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+.container{
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.container-fluid{
+    width: 40%;
+}
+.tag{
+    color: var(--text-color);
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+label{
+    color: var(--text-color);
+    padding: 0 15px;
+    font-size: 0.8rem;
+}
+.btn{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    min-width: 150px;
+    padding: 7px 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    color:var(--contrast-color);
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+.btn-reset{
+    width: 20%;
+}
+.fa-lock-open, .fa-lock{
+    color: var(--text-white);
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgb(214, 207, 207);
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+.form-control:focus,textarea:focus{
+    box-shadow: var(--text-color) 0px 2px 8px 0px;
+}
+.form-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-control{
+    outline: none;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 2px solid rgb(214, 207, 207);
+}
+.footer{
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--primary-text);
+    padding: 20px 0;
+    margin-top: 30px;
+    bottom: 0;
+    position: fixed;
+    font-size: 0.8rem;
+}
+.author{
+    color: var(--contrast-color);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 945px){
+    .title{
+        font-size: 1.1rem;
+    }
+    .form-group{
+        display: block;
+    }
+    .shift{ 
+        text-align: center;
+        width: 100%;
+        font-size: 0.6rem;
+    }
+    .form-control, label{
+        display: block;
+        margin: 15px auto;
+    }
+    textarea{
+        font-size: 0.8rem;
+    }
+    .footer{
+        position: relative;
+    }
+    .form-control{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    *{
+        font-size: 0.7rem;
+    }
+    .btn{
+        min-width: 90px;
+    }
+}

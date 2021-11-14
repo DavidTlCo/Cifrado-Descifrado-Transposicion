@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d4425b4c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cifrado por transposición</title>
+</head>
+<body>
+    <main>
+        <h2 class="title"><i class="fas fa-fingerprint"></i>Cifrado y Descifrado por transposición</h2>
+        <div class="container">
+            <div  class="container-fluid">
+                <h3 class="subtitle">Cifrado</h3>
+                <h4 class="tag">Texto llano:</h4>
+                <textarea name="" id="encrypt_text" cols="30" rows="5" placeholder="Texto a cifrar" size="100"></textarea>
+                <div class="form-group">
+                    <label for="shift_encrypt" class="shift">Clave: </label>
+                    <input type="text" class="form-control" id="shift_encrypt">
+                    <button class="btn" id="encrypt"><i class="fas fa-lock"></i>Cifrar</button>
+                </div>
+                <h4 class="tag">Texto cifrado</h4>
+                <textarea name="" id="encrypt_encrypt" cols="30" rows="5" readonly></textarea>
+            </div>
+            <div  class="container-fluid">
+                <h3 class="subtitle">Descifrado</h3>
+                <h4 class="tag">Texto cifrado:</h4>
+                <textarea name="" id="decrypt_encrypt" cols="30" rows="5" placeholder="Texto a descifrar" size="100"></textarea>
+                <div class="form-group">
+                    <label for="shift_decrypt" class="shift">Clave de cifrado: </label>
+                    <input type="text" class="form-control" id="shift_decrypt">
+                    <button class="btn" id="decrypt"><i class="fas fa-lock-open"></i>Descifrar</button>
+                </div>
+                <h4 class="tag">Texto descifrado</h4>
+                <textarea name="" id="decrypt_text" cols="30" rows="5" readonly></textarea>
+            </div>
+        </div>
+        <input type="reset" value="Limpiar" class="btn btn-reset" id="reset">
+    </main>
+    <div class="footer">
+        <div>
+            <p>Práctica 03 - Seguridad de redes - Criptografía</p>
+            <p>Todos los derechos reservados a <span class="author">David Tlahuapa Coraza</span>.</p>
+            <p>Otoño 2021</p>
+        </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
