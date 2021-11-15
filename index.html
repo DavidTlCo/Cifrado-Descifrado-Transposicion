@@ -17,8 +17,16 @@
                 <h4 class="tag">Texto llano:</h4>
                 <textarea name="" id="encrypt_text" cols="30" rows="5" placeholder="Texto a cifrar" size="100"></textarea>
                 <div class="form-group">
-                    <label for="shift_encrypt" class="shift">Clave: </label>
-                    <input type="text" class="form-control" id="shift_encrypt">
+                    <div class="controls">
+                        <div>
+                            <label for="shift_encrypt" class="shift">Clave: </label>
+                            <input type="text" class="form-control" id="shift_encrypt">
+                        </div>
+                        <div>
+                            <label for="shift_encrypt" class="shift">Relleno: </label>
+                            <input type="text" class="form-control filler" id="filler_encrypt">
+                        </div>
+                    </div>
                     <button class="btn" id="encrypt"><i class="fas fa-lock"></i>Cifrar</button>
                 </div>
                 <h4 class="tag">Texto cifrado</h4>
@@ -29,8 +37,16 @@
                 <h4 class="tag">Texto cifrado:</h4>
                 <textarea name="" id="decrypt_encrypt" cols="30" rows="5" placeholder="Texto a descifrar" size="100"></textarea>
                 <div class="form-group">
-                    <label for="shift_decrypt" class="shift">Clave de cifrado: </label>
-                    <input type="text" class="form-control" id="shift_decrypt">
+                    <div class="controls">
+                        <div>
+                            <label for="shift_encrypt" class="shift">Clave: </label>
+                            <input type="text" class="form-control" id="shift_decrypt">
+                        </div>
+                        <div>
+                            <label for="shift_encrypt" class="shift">Relleno: </label>
+                            <input type="text" class="form-control filler" id="filler_decrypt">
+                        </div>
+                    </div>
                     <button class="btn" id="decrypt"><i class="fas fa-lock-open"></i>Descifrar</button>
                 </div>
                 <h4 class="tag">Texto descifrado</h4>

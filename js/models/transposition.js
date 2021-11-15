@@ -5,7 +5,7 @@ export class Transposition{
         this.key = key;
         this.alphabet = alphabet();
         this.rows = 0;
-        this.filler = filler ? filler : "☺";
+        this.filler = filler ? filler : "•";
         this.disorderlyMatrix = [...this.fillMatrix(key, text)];
         this.orderlyMatrix = this.order();
     }
