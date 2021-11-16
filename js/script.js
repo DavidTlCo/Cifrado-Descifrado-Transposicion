@@ -33,9 +33,9 @@ const encrypt = (e) =>{
 }
 
 const decrypt = (e) =>{
-    const encrypt_text = document.getElementById("encrypt_text").value;
-    const key_encrypt = document.getElementById("shift_encrypt").value;
-    const filler_encrypt = document.getElementById("filler_encrypt").value;
+    const encrypt_text = document.getElementById("decrypt_encrypt").value;
+    const key_encrypt = document.getElementById("shift_decrypt").value;
+    const filler_encrypt = document.getElementById("filler_decrypt").value;
     const transposition = new Transposition(key_encrypt, encrypt_text, filler_encrypt);
     const decrypt_text = document.getElementById("decrypt_encrypt").value;
     const shift_decrypt = document.getElementById("shift_decrypt").value;
